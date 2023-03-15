@@ -1,35 +1,63 @@
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   width: 100vw;
   background-color: #DFE9EB;
+  padding: 0px;
+  margin: 0px;
 }
 
 #title {
   font-family: "Open Sans", sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #2c939c;
+  text-align: center;
+  margin: 0.5rem;
 }
 
-.main-body {
-  height: 50vh;
-  width: 50vh;
+.body-grid {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tic-tac-toe-wrapper {
+  display: flex;
+  justify-content: center;
+  grid-column: 2/3;
+}
+
+.tic-tac-toe-grid {
+  height: 40vh;
+  width: 40vh;
+  margin: 0px;
+  align-self: center;
   background-image: url("../images/grid.svg");
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 0.5rem;
 }
-.main-body button {
+.tic-tac-toe-grid button {
   display: flex;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 3rem;
+}
+.stats h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #2c939c;
+  text-align: left;
+  margin: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
