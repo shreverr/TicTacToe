@@ -78,6 +78,7 @@ function checkWinner(){
         if(grid.Xgrid[winningPositions[i][0]] == true && grid.Xgrid[winningPositions[i][1]] == true 
             && grid.Xgrid[winningPositions[i][2]] == true){
                 p1IsWinner();
+                resetBoard();
                 return;
         }
     }
@@ -86,6 +87,7 @@ function checkWinner(){
         if(grid.Ogrid[winningPositions[i][0]] == true && grid.Ogrid[winningPositions[i][1]] == true 
             && grid.Ogrid[winningPositions[i][2]] == true){
                 p2IsWinner();
+                resetBoard();
                 return;
         }
     }
