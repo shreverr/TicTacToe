@@ -59,5 +59,17 @@ body {
   text-align: left;
   margin: 0.5rem;
 }
+.stats button {
+  margin: 1rem 0 0 0.5rem;
+  background-color: #bfe1e8;
+  width: 10rem;
+  height: 2.5rem;
+  border: 2px solid #2c939c;
+  border-radius: 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #2c939c;
+}
 
 /*# sourceMappingURL=style.css.map */
